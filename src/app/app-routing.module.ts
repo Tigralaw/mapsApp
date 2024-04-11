@@ -8,7 +8,7 @@ const routes: Routes = [
     loadChildren: () => import('./maps/maps.module').then( m => m.MapsModule ),
   },
   {
-    // importar un standalone component como módulo independiente solo en la carga perezosa y en ningún otro lugar
+    // importar un standalone component como módulo independiente en la carga perezosa
     path: 'alone',
     loadComponent: () => import('./alone/pages/alone-page/alone-page.component').then( m => m.AlonePageComponent ),
   },
